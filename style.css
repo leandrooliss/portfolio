@@ -1,0 +1,45 @@
+@import url("styles/header.css");
+@import url("styles/introducao.css");
+@import url("styles/projetos.css");
+@import url("styles/footer.css");
+@import url("styles/sobre.css");
+@import url("styles/habilidades.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+    --branco: #FAFAFA;
+    --preto: #1E1F21;
+    --azul: #B4C5FD;
+    --laranja: #F4B296;
+    --fonte: "Inter", sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-size: 1.75rem;
+    color: var(--preto);
+}
+
+body{
+    background-color: var(--branco);
+}
+
+.conteudo{
+    max-width: 850px;
+    margin: 175px auto 180px auto;
+    padding: 0px 25px;
+}
+
+strong{
+    font-weight: bold;
+}

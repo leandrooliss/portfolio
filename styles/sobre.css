@@ -1,0 +1,26 @@
+.sobre{
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.sobre__retangulo1{
+    width: 374px;
+    height: 109px;
+    background-color: var(--azul);
+    position: absolute;
+    top:-40px;
+    right:-23px;
+    transform: rotate(7deg);
+    z-index: -1;
+}
+
+.sobre__retangulo2{
+    width: 206px;
+    height: 95px;
+    background-color: var(--azul);
+    position: absolute;
+    bottom: -50px;
+    left: -45px;
+    transform: rotate(32deg);
+    z-index: -1;
+}

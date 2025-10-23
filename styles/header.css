@@ -1,0 +1,43 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    padding: 0px 25px;
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.cabecalho__titulo, .menu__link{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: var(--branco); */
+}
+
+/* .cabecalho a{
+    padding: 2px 5px;
+    background-color: var(--azul);
+} */
+
+.cabecalho a:hover{
+    /* background-color: var(--laranja); */
+    text-decoration: underline;
+}
+
+/* .cabecalho__logo{
+    margin-left: -5px;
+} 
+    ** Precisa incluir a classe no HTML
+*/
+
+.cabecalho__menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: -5px; */
+}

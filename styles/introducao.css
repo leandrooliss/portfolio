@@ -1,0 +1,25 @@
+.introducao{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.introducao__link{
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.introducao__link:hover{
+    text-decoration: underline;
+}
+
+.introducao__retangulo{
+    width: 86px;
+    height: 133px;
+    background-color: var(--azul);
+    position: absolute;
+    bottom: -28px;
+    left: -18px;
+    transform: rotate(-8deg);
+    z-index: -1;
+}

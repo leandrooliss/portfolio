@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Oliveira - Desenvolvedor Front-End e Web Designer</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html">
+            <h1 class="cabecalho__titulo">Leandro Oliveira</h1>
+        </a>
+        <nav class="cabecalho__menu">
+            <a href="sobre.html" class="menu__link">Sobre</a>
+            <a href="projetos.html" class="menu__link">Projetos</a>
+            <a href="#secao-contato" class="menu__link">Contato</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="introducao">
+            <p>Olá! Meu nome é <strong>Leandro Oliveira</strong>, sou um <strong>desenvolvedor front-end</strong> e <strong>web designer</strong> de Santos/SP. Gosto de unir tecnologia e design para criar interfaces maneiras e modernas, sempre focando na melhor experiência do usuário.</p>
+            <a href="sobre.html" class="introducao__link">sobre mim →</a>
+            <div class="introducao__retangulo"></div>
+        </section>
+        <section class="projetos">
+            <div class="projetos__retangulo"></div>
+            <h2 class="projetos__titulo">Meus Projetos</h2>
+            <article class="projetos__projeto">
+                <img src="img/preview-monitoria-algoritmos.jpg" alt="Preview do site Monitoria de Algoritmos" />
+                <div>
+                    <h3>Monitoria de Algoritmos</h3>
+                    <p class="projeto__descricao">
+                        Site em HTML, CSS e JS para apoiar alunos e monitores de Algoritmos, com design moderno e foco em organização e clareza das informações.
+                    </p>
+                    <a href="monitoria-algoritmos.html" class="projeto__link">ver mais →</a>
+                </div>
+            </article>
+            <article class="projetos__projeto">
+                <img src="img/preview-lista-tarefas.jpg" alt="Preview da Lista de Tarefas" />
+                <div>
+                    <h3>Lista de Tarefas</h3>
+                    <p class="projeto__descricao">
+                        Aplicação web em HTML, CSS e JS para criar e personalizar listas. Projeto focado em aprendizado e usabilidade, com um design minimalista, mas atraente.
+                    </p>
+                    <a href="lista-tarefas.html" class="projeto__link">ver mais →</a>
+                </div>
+            </article>
+            <article class="projetos__projeto">
+                <img src="img/preview-multiportos.jpg" alt="Preview do projeto Multiportos" />
+                <div>
+                    <h3>Multiportos</h3>
+                    <p class="projeto__descricao">
+                        Design de site institucional criado no Figma para uma empresa de transporte. Layout limpo, buscando dinamismo, identidade visual e profissionalismo.
+                    </p>
+                    <a href="multiportos.html" class="projeto__link">ver mais →</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape" id="secao-contato">
+        <div class="rodape__container">
+            <ul class="rodape__lista">
+                <h3 class="lista__titulo">Redes</h3>
+                <li class="lista__item"><a href="https://github.com/leandrooliss" target="_blank">1. Github</a></li>
+                <li class="lista__item"><a href="https://www.linkedin.com/in/leandro-oliss/" target="_blank">2. Linkedin</a></li>
+            </ul>
+            <ul class="rodape__lista">
+                <h3 class="lista__titulo">Contato</h3>
+                <li class="lista__item"><a href="mailto:leandro.olissan@gmail.com" target="_blank">1. leandro.olissan@gmail.com</a></li>
+                <li class="lista__item"><a href="https://wa.me/5513996788865" target="_blank">2. (13) 99678-8865</a></li>
+            </ul>
+            <form class="rodape__form">
+                <h3 class="lista__titulo">Deixe Uma Mensagem</h3>
+                <input class="form__caixa" type="text" placeholder="Nome" required />
+                <input class="form__caixa" type="email" placeholder="Email" required />
+                <textarea class="form__caixa" placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit" class="form__botao">Enviar</button>
+            </form>
+        </div>
+        <span class="rodape__direitos">© 2025. Leandro Oliveira. Todos direitos reservados.</span>
+    </footer>
+</body>
+</html>
