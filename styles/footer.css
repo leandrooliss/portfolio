@@ -4,22 +4,20 @@
 }
 
 .rodape__container{
-    max-width: 850px;
+    max-width: 800px;
     padding: 60px 25px;
+    gap: 45px;
     color: var(--branco);
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .lista__titulo{
     color: var(--azul);
     font-size: 1.25rem;
     margin-bottom: 25px;
-}
-
-.lista__item{
-    list-style: none;
 }
 
 .lista__item a{
@@ -36,7 +34,7 @@
 .rodape__form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-grow: 1;
 }
 
 
@@ -49,7 +47,6 @@
     font-weight: 200;
     margin-bottom: 15px;
     resize: none;
-    width: 100%;
 }
 
 .form__caixa:focus{
@@ -63,6 +60,7 @@
     font-weight: 200;   
     border: none;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 .form__botao:hover{
@@ -76,3 +74,20 @@
     display: block;
     text-align: center;
 }
+
+@media screen and (max-width: 700px){
+    .rodape__container{
+        padding: 60px 90px;
+    } 
+}
+
+@media screen and (max-width: 545px){
+    .rodape__container{
+        padding: 60px 25px;
+    } 
+
+    .rodape__direitos{
+        margin: 0px 25px;
+    }
+}
+

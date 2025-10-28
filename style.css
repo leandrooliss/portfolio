@@ -17,7 +17,7 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 *{
@@ -35,7 +35,7 @@ body{
 }
 
 .conteudo{
-    max-width: 850px;
+    max-width: 800px;
     margin: 175px auto 180px auto;
     padding: 0px 25px;
 }
