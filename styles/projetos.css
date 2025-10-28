@@ -52,8 +52,24 @@
 .projeto__link{
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .projeto__link:hover{
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+@media screen and (max-width: 795px){
+    .projetos__projeto{
+        flex-wrap: wrap;
+    }
+
+    .projetos__projeto:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    .projeto__preview{
+        width: 100%;
+    }
 }

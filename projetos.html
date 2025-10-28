@@ -11,42 +11,50 @@
         <a href="index.html">
             <h1 class="cabecalho__titulo">Leandro Oliveira</h1>
         </a>
-        <nav class="cabecalho__menu">
-            <a href="sobre.html" class="menu__link">Sobre</a>
-            <a href="projetos.html" class="menu__link">Projetos</a>
-            <a href="#secao-contato" class="menu__link">Contato</a>
-        </nav>
+        <div class="cabecalho__container">
+            <input type="checkbox" id="menu__toggle">
+            <label for="menu__toggle" class="menu__icone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="cabecalho__menu">
+                <a href="sobre.html" class="menu__link">Sobre</a>
+                <a href="projetos.html" class="menu__link">Projetos</a>
+                <a href="#secao-contato" class="menu__link">Contato</a>
+            </nav>
+        </div>
     </header>
     <main class="conteudo">
         <section class="projetos">
             <div class="projetos__retangulo2"></div>
             <h2 class="projetos__titulo">Meus Projetos</h2>
             <article class="projetos__projeto">
-                <img src="img/preview-monitoria-algoritmos.jpg" alt="Preview do site Monitoria de Algoritmos" />
+                <img src="img/preview-monitoria-algoritmos.jpg" alt="Preview do site Monitoria de Algoritmos" class="projeto__preview"/>
                 <div>
                     <h3>Monitoria de Algoritmos</h3>
                     <p class="projeto__descricao">
-                        Site em HTML, CSS e JS para apoiar alunos e monitores de Algoritmos, com design moderno e foco em organização e clareza das informações.
+                        Site em HTML, CSS e JS para apoiar alunos e monitores de Algoritmos, com design moderno e foco em organização, clareza e fácil navegação das informações.
                     </p>
                     <a href="monitoria-algoritmos.html" class="projeto__link">ver mais →</a>
                 </div>
             </article>
             <article class="projetos__projeto">
-                <img src="img/preview-lista-tarefas.jpg" alt="Preview da Lista de Tarefas" />
+                <img src="img/preview-lista-tarefas.jpg" alt="Preview da Lista de Tarefas" class="projeto__preview"/>
                 <div>
                     <h3>Lista de Tarefas</h3>
                     <p class="projeto__descricao">
-                        Aplicação web em HTML, CSS e JS para criar e personalizar listas. Projeto focado em aprendizado e usabilidade, com um design minimalista, mas atraente.
+                        Aplicação web em HTML, CSS e JS para criar e personalizar listas. Projeto focado em aprendizado, usabilidade e experiência do usuário, com um design minimalista, mas atraente.
                     </p>
                     <a href="lista-tarefas.html" class="projeto__link">ver mais →</a>
                 </div>
             </article>
             <article class="projetos__projeto">
-                <img src="img/preview-multiportos.jpg" alt="Preview do projeto Multiportos" />
+                <img src="img/preview-multiportos.jpg" alt="Preview do projeto Multiportos" class="projeto__preview"/>
                 <div>
                     <h3>Multiportos</h3>
                     <p class="projeto__descricao">
-                        Design de site institucional criado no Figma para uma empresa de transporte. Layout limpo, buscando dinamismo, identidade visual e profissionalismo.
+                        Design de site institucional criado no Figma para uma empresa de transporte. Layout limpo e equilibrado, buscando dinamismo, identidade visual e profissionalismo.
                     </p>
                     <a href="multiportos.html" class="projeto__link">ver mais →</a>
                 </div>

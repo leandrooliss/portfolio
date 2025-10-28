@@ -21,3 +21,14 @@
     transform: rotate(133deg);
     z-index: -1;
 }
+
+@media screen and (max-width: 640px){
+    .habilidades__lista{
+        grid-template-rows: none;
+        grid-auto-flow: row;
+    }
+
+    .habilidades__retangulo{
+        right: 10px;
+    }
+}
