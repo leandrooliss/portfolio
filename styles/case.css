@@ -1,0 +1,27 @@
+.case{
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.case__retangulo{
+    width: 112px;
+    height: 266px;    
+    background-color: var(--laranja);
+    position: absolute;
+    top: -91px;
+    right: 77px;
+    transform: rotate(-93deg);
+    z-index: -1;
+}
+
+.case__retangulo2{
+    width: 97px;
+    height: 127px;
+    background-color: var(--laranja);
+    position: absolute;
+    bottom: -47px;
+    left: -15px;
+    transform: rotate(-95deg);
+    z-index: -1;
+}
+
