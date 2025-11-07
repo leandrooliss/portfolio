@@ -37,6 +37,10 @@
     margin-bottom: 25px;
 }
 
+.projeto__preview{
+    max-width: 60%;
+}
+
 .projetos__projeto div{
     display: flex;
     flex-direction: column;
@@ -70,6 +74,6 @@
     }
 
     .projeto__preview{
-        width: 100%;
+        max-width: 100%;
     }
 }

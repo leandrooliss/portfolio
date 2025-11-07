@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leandro Oliveira - Desenvolvedor Front-End e Web Designer</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
     <header class="cabecalho">
@@ -26,39 +26,31 @@
         </div>
     </header>
     <main class="conteudo">
-        <section class="projetos">
-            <div class="projetos__retangulo2"></div>
-            <h2 class="projetos__titulo">Meus Projetos</h2>
-            <article class="projetos__projeto">
-                <img src="img/site-monitoria/monitoria-preview.webp" alt="Preview do site Monitoria de Algoritmos" class="projeto__preview"/>
-                <div>
-                    <h3>Monitoria de Algoritmos</h3>
-                    <p class="projeto__descricao">
-                        Site em HTML, CSS e JS para apoiar alunos e monitores de Algoritmos, com design moderno e foco em organização, clareza e fácil navegação das informações.
-                    </p>
-                    <a href="monitoria-algoritmos.html" class="projeto__link">ver mais →</a>
-                </div>
-            </article>
-            <article class="projetos__projeto">
-                <img src="img/lista-tarefas/tarefas-preview.webp" alt="Preview da Lista de Tarefas" class="projeto__preview"/>
-                <div>
-                    <h3>Lista de Tarefas</h3>
-                    <p class="projeto__descricao">
-                        Aplicação web em HTML, CSS e JS para criar e personalizar listas. Projeto focado em aprendizado, usabilidade e experiência do usuário, com um design minimalista, mas atraente.
-                    </p>
-                    <a href="lista-tarefas.html" class="projeto__link">ver mais →</a>
-                </div>
-            </article>
-            <article class="projetos__projeto">
-                <img src="img/multiportos/multiportos-preview.webp" alt="Preview do projeto Multiportos" class="projeto__preview"/>
-                <div>
-                    <h3>Multiportos</h3>
-                    <p class="projeto__descricao">
-                        Design de site institucional criado no Figma para uma empresa de transporte. Layout limpo e equilibrado, buscando dinamismo, identidade visual e profissionalismo.
-                    </p>
-                    <a href="multiportos.html" class="projeto__link">ver mais →</a>
-                </div>
-            </article>
+        <section class="case">
+            <div class="case__retangulo"></div>
+            <h2 class="projetos__titulo">Multiportos</h2>
+            <p>O Multiportos foi um projeto de design desenvolvido para uma empresa do setor de transporte, com o objetivo de criar um layout moderno e profissional para seu site. Neste projeto, fiquei responsável apenas pelo desenvolvimento do design da interface onde explorei conceitos de dinamismo e identidade visual.
+            Busquei transmitir movimento e fluidez por meio do uso de linhas e variações no alinhamento dos elementos, criando uma sensação de ritmo e energia e buscando refletir bem o ramo de atuação da empresa.
+            O projeto foi criado no Figma, onde trabalhei na estruturação das seções e organização visual do layout. Essa experiência foi importante para aprimorar meu olhar de design e consolidar minha compreensão sobre composição visual e identidade.</p>
+            <div class="case__retangulo2"></div>
+        </section>
+        <section class="carrossel">
+            <button class="carrossel__botao botao__esquerdo">
+                <img src="img/icons/seta-esquerda.svg" alt="Seta para esquerda">
+            </button>
+            <div class="carrossel__faixa">
+                <img src="img/multiportos/multiportos-1.webp" alt="Imagem do site em um Macbook" class="carrossel__imagem">
+                <img src="img/multiportos/multiportos-2.webp" alt="Imagem da Landing Page" class="carrossel__imagem">
+                <img src="img/multiportos/multiportos-3.webp" alt="Imagem da Seção de Atividades" class="carrossel__imagem">
+                <img src="img/multiportos/multiportos-4.webp" alt="Imagem da Seção de Entre em Contato" class="carrossel__imagem">
+                <img src="img/multiportos/multiportos-5.webp" alt="Imagem da Página Sobre" class="carrossel__imagem">
+                <img src="img/multiportos/multiportos-6.webp" alt="Imagem da Seção de Seguros" class="carrossel__imagem">
+                <img src="img/multiportos/multiportos-7.webp" alt="Imagem da Página de Cotação" class="carrossel__imagem">
+            </div>
+            <button class="carrossel__botao botao__direito">
+                <img src="img/icons/seta-direita.svg" alt="Seta para direita">
+            </button>
+            <nav class="carrossel__indicadores"></nav>
         </section>
     </main>
     <footer class="rodape" id="secao-contato">
