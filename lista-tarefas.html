@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Oliveira - Desenvolvedor Front-End e Web Designer</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html">
+            <h1 class="cabecalho__titulo">Leandro Oliveira</h1>
+        </a>
+        <div class="cabecalho__container">
+            <input type="checkbox" id="menu__toggle">
+            <label for="menu__toggle" class="menu__icone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="cabecalho__menu">
+                <a href="sobre.html" class="menu__link">Sobre</a>
+                <a href="projetos.html" class="menu__link">Projetos</a>
+                <a href="#secao-contato" class="menu__link">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="case">
+            <div class="case__retangulo"></div>
+            <h2 class="projetos__titulo">Lista de Tarefas</h2>
+            <p>
+                A Lista de Tarefas foi um projeto desenvolvido com o objetivo principal de estudar JavaScript e aprofundar o entendimento sobre manipulação do DOM. A proposta era criar uma aplicação simples e funcional, que permitisse testar diferentes interações e dinâmicas entre elementos da interface de forma prática e direta.<br>
+                O usuário pode adicionar novas tarefas, marcá-las como concluídas, editá-las e exclui-las, além de visualizar o horário em que cada item foi criado ou alterado. O design é simples e minimalista.<br>
+                Esse projeto foi uma ótima oportunidade para consolidar conceitos importantes de JavaScript, como eventos, criação e remoção dinâmica de elementos, manipulação de classes e organização da lógica da aplicação. Também ajudou a aprimorar minha forma de estruturar layouts simples, mas funcionais, utilizando HTML, CSS e boas práticas de desenvolvimento.
+            </p>
+            <div class="case__retangulo2"></div>
+        </section>
+        <section class="carrossel">
+            <button class="carrossel__botao" id="botao-esquerdo">
+                <img src="img/icons/seta-esquerda.svg" alt="Seta para esquerda">
+            </button>
+            <div class="carrossel__faixa">
+                <img src="img/lista-tarefas/tarefas-1.webp" alt="Imagem do app em um celular" class="carrossel__imagem">
+                <img src="img/lista-tarefas/tarefas-2.webp" alt="Imagem do app em um tablet" class="carrossel__imagem">
+                <img src="img/lista-tarefas/tarefas-3.webp" alt="Imagem do app sem nenhum item adicionado" class="carrossel__imagem">
+                <img src="img/lista-tarefas/tarefas-4.webp" alt="Imagem do app com itens adicionados" class="carrossel__imagem">
+                <img src="img/lista-tarefas/tarefas-5.webp" alt="Imagem versão desktop do app" class="carrossel__imagem">
+            </div>
+            <button class="carrossel__botao" id="botao-direito">
+                <img src="img/icons/seta-direita.svg" alt="Seta para direita">
+            </button>
+            <nav class="carrossel__indicadores" id="carrossel-indicadores">
+                <!-- <button class="carrossel__indicador indicador__selecionado"></button> -->
+            </nav>
+        </section>
+    </main>
+    <footer class="rodape" id="secao-contato">
+        <div class="rodape__container">
+            <ul class="rodape__lista">
+                <h3 class="lista__titulo">Redes</h3>
+                <li class="lista__item"><a href="https://github.com/leandrooliss" target="_blank">1. Github</a></li>
+                <li class="lista__item"><a href="https://www.linkedin.com/in/leandro-oliss/" target="_blank">2. Linkedin</a></li>
+            </ul>
+            <ul class="rodape__lista">
+                <h3 class="lista__titulo">Contato</h3>
+                <li class="lista__item"><a href="mailto:leandro.olissan@gmail.com" target="_blank">1. leandro.olissan@gmail.com</a></li>
+                <li class="lista__item"><a href="https://wa.me/5513996788865" target="_blank">2. (13) 99678-8865</a></li>
+            </ul>
+            <form class="rodape__form">
+                <h3 class="lista__titulo">Deixe Uma Mensagem</h3>
+                <input class="form__caixa" type="text" placeholder="Nome" required />
+                <input class="form__caixa" type="email" placeholder="Email" required />
+                <textarea class="form__caixa" placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit" class="form__botao">Enviar</button>
+            </form>
+        </div>
+        <span class="rodape__direitos">© 2025. Leandro Oliveira. Todos direitos reservados.</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Oliveira - Desenvolvedor Front-End e Web Designer</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html">
+            <h1 class="cabecalho__titulo">Leandro Oliveira</h1>
+        </a>
+        <div class="cabecalho__container">
+            <input type="checkbox" id="menu__toggle">
+            <label for="menu__toggle" class="menu__icone">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="cabecalho__menu">
+                <a href="sobre.html" class="menu__link">Sobre</a>
+                <a href="projetos.html" class="menu__link">Projetos</a>
+                <a href="#secao-contato" class="menu__link">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="case">
+            <div class="case__retangulo"></div>
+            <h2 class="projetos__titulo">Site da Monitoria</h2>
+            <p>
+                O projeto Site da Monitoria está sendo desenvolvido em parceria com um amigo com o objetivo de criar um portal completo para auxiliar estudantes e monitores da disciplina de Algoritmos e Lógica de Programação. A proposta é centralizar conteúdos importantes em um único lugar, tornando o processo de estudo mais acessível, organizado e eficiente.<br>
+                O site reúne o conteúdo da matéria, listas de exercícios, links úteis, informações sobre horários, locais e formas de contato da monitoria, buscando facilitar a vida de quem estuda e quem ensina. A estrutura foi projetada para facilitar a navegação e permitir que o usuário encontre rapidamente o que precisa, seja revisando um tópico específico ou consultando um material complementar.<br>
+                No design, optamos por um visual moderno e focado no conteúdo, inspirado na organização clara e objetiva de sites de documentação. Por isso, o layout conta com um menu lateral à esquerda, onde o usuário pode navegar entre os tópicos, enquanto a área principal atualiza com o conteúdo selecionado.<br>
+                O desenvolvimento está sendo feito utilizando HTML, CSS e JavaScript, com foco em boas práticas, organização e facilidade de manutenção. Esse projeto tem sido uma excelente oportunidade para aprofundar conhecimentos em desenvolvimento de interfaces, navegação dinâmica e estruturação de conteúdo, além de reforçar habilidades de colaboração e planejamento em projetos conjuntos.
+            </p>
+            <div class="case__retangulo2"></div>
+        </section>
+        <section class="carrossel">
+            <button class="carrossel__botao" id="botao-esquerdo">
+                <img src="img/icons/seta-esquerda.svg" alt="Seta para esquerda">
+            </button>
+            <div class="carrossel__faixa">
+                <img src="img/site-monitoria/monitoria-1.webp" alt="Imagem do site em um macbook" class="carrossel__imagem">
+                <img src="img/site-monitoria/monitoria-2.webp" alt="Imagem da seção sobre" class="carrossel__imagem">
+                <img src="img/site-monitoria/monitoria-3.webp" alt="Imagem da seção de conteúdo" class="carrossel__imagem">
+                <img src="img/site-monitoria/monitoria-4.webp" alt="Imagem da seção de lista de exercícios" class="carrossel__imagem">
+                <img src="img/site-monitoria/monitoria-5.webp" alt="Imagem da seção de horários e contatos" class="carrossel__imagem">
+                <img src="img/site-monitoria/monitoria-6.webp" alt="Imagem do rodapé" class="carrossel__imagem">
+            </div>
+            <button class="carrossel__botao" id="botao-direito">
+                <img src="img/icons/seta-direita.svg" alt="Seta para direita">
+            </button>
+            <nav class="carrossel__indicadores" id="carrossel-indicadores">
+                <!-- <button class="carrossel__indicador indicador__selecionado"></button> -->
+            </nav>
+        </section>
+    </main>
+    <footer class="rodape" id="secao-contato">
+        <div class="rodape__container">
+            <ul class="rodape__lista">
+                <h3 class="lista__titulo">Redes</h3>
+                <li class="lista__item"><a href="https://github.com/leandrooliss" target="_blank">1. Github</a></li>
+                <li class="lista__item"><a href="https://www.linkedin.com/in/leandro-oliss/" target="_blank">2. Linkedin</a></li>
+            </ul>
+            <ul class="rodape__lista">
+                <h3 class="lista__titulo">Contato</h3>
+                <li class="lista__item"><a href="mailto:leandro.olissan@gmail.com" target="_blank">1. leandro.olissan@gmail.com</a></li>
+                <li class="lista__item"><a href="https://wa.me/5513996788865" target="_blank">2. (13) 99678-8865</a></li>
+            </ul>
+            <form class="rodape__form">
+                <h3 class="lista__titulo">Deixe Uma Mensagem</h3>
+                <input class="form__caixa" type="text" placeholder="Nome" required />
+                <input class="form__caixa" type="email" placeholder="Email" required />
+                <textarea class="form__caixa" placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit" class="form__botao">Enviar</button>
+            </form>
+        </div>
+        <span class="rodape__direitos">© 2025. Leandro Oliveira. Todos direitos reservados.</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
