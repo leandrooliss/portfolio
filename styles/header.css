@@ -12,9 +12,9 @@
     z-index: 1;
 }
 
-.cabecalho__titulo, .menu__link{
-    font-size: 1.5rem;
-    font-weight: bold;
+.cabecalho a{
+    padding: 3px 5px;
+    background-color: var(--branco);
 }
 
 .cabecalho a:hover{
@@ -22,7 +22,17 @@
     text-decoration-thickness: 2px;
 }
 
+.cabecalho__titulo, .menu__link{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cabecalho__logo{
+    margin-left: -5px;
+}
+
 .cabecalho__menu{
+    margin-right: -5px;
     display: flex;
     gap: 15px;
     align-items: center;
