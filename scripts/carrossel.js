@@ -1,5 +1,4 @@
 const imagensDoCarrossel = document.querySelectorAll('.carrossel__imagem');
-
 const botaoEsquerdo = document.getElementById('botao-esquerdo');
 const botaoDireito = document.getElementById('botao-direito');
 const indicadores = document.getElementById('carrossel-indicadores');
@@ -42,4 +41,3 @@ botaoDireito.addEventListener('click', function(){
     indice = (indice + 1) % imagensDoCarrossel.length;
     mudarImagem();
 });
-
