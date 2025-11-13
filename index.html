@@ -80,13 +80,15 @@
             </ul>
             <form class="rodape__form">
                 <h3 class="lista__titulo">Deixe Uma Mensagem</h3>
-                <input class="form__caixa" type="text" placeholder="Nome" required />
-                <input class="form__caixa" type="email" placeholder="Email" required />
-                <textarea class="form__caixa" placeholder="Mensagem" rows="4" required></textarea>
+                <input class="form__caixa" type="text" name="name" placeholder="Nome" required />
+                <input class="form__caixa" type="email" name="email" placeholder="Email" required />
+                <textarea class="form__caixa" name="message" placeholder="Mensagem" rows="4" required></textarea>
                 <button type="submit" class="form__botao">Enviar</button>
             </form>
         </div>
         <span class="rodape__direitos">© 2025. Leandro Oliveira. Todos direitos reservados.</span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
