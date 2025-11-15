@@ -37,8 +37,17 @@
     margin-bottom: 25px;
 }
 
+.projeto__container{
+    display: block;
+    width: 60%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
 .projeto__preview{
-    max-width: 60%;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 .projetos__projeto div{
@@ -73,7 +82,7 @@
         margin-bottom: 50px;
     }
 
-    .projeto__preview{
-        max-width: 100%;
+    .projeto__container{
+        width: 100%;
     }
 }
