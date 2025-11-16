@@ -1,10 +1,9 @@
-const faixaCarrossel = document.querySelector('.carrossel__faixa')
 const imagensDoCarrossel = document.querySelectorAll('.carrossel__imagem');
 const botoesEsquerdo = document.querySelectorAll('.botao__esquerdo');
 const botoesDireito = document.querySelectorAll('.botao__direito');
-const indicadores = document.getElementById('carrossel-indicadores');
-const lightbox = document.getElementById('lightbox');
-const imagemLightbox = document.getElementById('lightbox-img');
+const indicadores = document.querySelector('#carrossel-indicadores');
+const lightbox = document.querySelector('#lightbox');
+const imagemLightbox = document.querySelector('#lightbox-img');
 const folder = lightbox.dataset.folder;
 
 let indice = 0;
@@ -24,6 +23,7 @@ imagensDoCarrossel.forEach((_, i) => {
 
     indicadores.appendChild(indicador);
 
+    const faixaCarrossel = document.querySelector('.carrossel__faixa');
     faixaCarrossel.addEventListener('click', function(){
         lightbox.style.display = 'flex';
         document.body.classList.add('sem-scroll');

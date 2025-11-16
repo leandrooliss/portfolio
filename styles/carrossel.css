@@ -64,7 +64,7 @@
     background-color: var(--laranja);
 }
 
-#lightbox{
+.lightbox{
     position: fixed;
     top: 0px;
     left: 0px;
@@ -79,7 +79,7 @@
     gap: 25px;
 }
 
-#lightbox-img{
+.lightbox__img{
     width: 70vw;
 }
 
@@ -93,11 +93,11 @@
         height: 60px;
     }
 
-    #botao-esquerdo{
+    .carrossel .botao-esquerdo{
         transform: translate(-15px, calc(-50% - 12px));
     }
 
-    #botao-direito{
+    .carrossel #botao-direito{
         transform: translate(15px, calc(-50% - 12px));
     }
 }
