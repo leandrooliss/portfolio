@@ -1,9 +1,14 @@
+const faixaCarrossel = document.querySelector('.carrossel__faixa')
 const imagensDoCarrossel = document.querySelectorAll('.carrossel__imagem');
-const botaoEsquerdo = document.getElementById('botao-esquerdo');
-const botaoDireito = document.getElementById('botao-direito');
+const botoesEsquerdo = document.querySelectorAll('.botao__esquerdo');
+const botoesDireito = document.querySelectorAll('.botao__direito');
 const indicadores = document.getElementById('carrossel-indicadores');
+const lightbox = document.getElementById('lightbox');
+const imagemLightbox = document.getElementById('lightbox-img');
+const folder = lightbox.dataset.folder;
 
 let indice = 0;
+imagemLightbox.src = folder + '0.webp'
 
 imagensDoCarrossel.forEach((_, i) => {
     const indicador = document.createElement('button');
@@ -18,6 +23,11 @@ imagensDoCarrossel.forEach((_, i) => {
     });
 
     indicadores.appendChild(indicador);
+
+    faixaCarrossel.addEventListener('click', function(){
+        lightbox.style.display = 'flex';
+        document.body.classList.add('sem-scroll');
+    });
 })
 
 const botoesIndicadores = indicadores.querySelectorAll('.carrossel__indicador');
@@ -30,14 +40,30 @@ function mudarImagem(){
         botao.classList.remove('indicador__selecionado');
     })
     botoesIndicadores[indice].classList.add('indicador__selecionado');
+    imagemLightbox.src = folder + indice + '.webp'
 };
 
-botaoEsquerdo.addEventListener('click', function(){
-    indice = (indice - 1 + imagensDoCarrossel.length) % imagensDoCarrossel.length;
-    mudarImagem();
+botoesEsquerdo.forEach(botao => {
+    botao.addEventListener('click', function(event){
+        event.stopPropagation();
+        indice = (indice - 1 + imagensDoCarrossel.length) % imagensDoCarrossel.length;
+        mudarImagem();
+    });
+});
+    
+botoesDireito.forEach(botao => {
+    botao.addEventListener('click', function(event){
+        event.stopPropagation();
+        indice = (indice + 1) % imagensDoCarrossel.length;
+        mudarImagem();
+    });
 });
 
-botaoDireito.addEventListener('click', function(){
-    indice = (indice + 1) % imagensDoCarrossel.length;
-    mudarImagem();
+lightbox.addEventListener('click', function(){
+    lightbox.style.display = 'none';
+    document.body.classList.remove('sem-scroll');
+});
+
+imagemLightbox.addEventListener('click', function(event){
+    event.stopPropagation();
 });

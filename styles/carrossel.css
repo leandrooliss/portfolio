@@ -6,6 +6,7 @@
     display: flex;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
 
 .carrossel__imagem{
@@ -24,17 +25,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     cursor: pointer;
 }
 
-#botao-esquerdo{
+.carrossel .carrossel__botao{
+    position: absolute;
+}
+
+.carrossel .botao__esquerdo{
     left: 0%;
     top: 50%;
     transform: translate(-50%, calc(-50% - 12px));
 }
 
-#botao-direito{
+.carrossel .botao__direito{
     right: 0%;
     top: 50%;
     transform: translate(50%, calc(-50% - 12px));
@@ -58,6 +62,29 @@
 
 .indicador__selecionado{
     background-color: var(--laranja);
+}
+
+#lightbox{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#lightbox-img{
+    width: 70vw;
+}
+
+.sem-scroll {
+    overflow: hidden;
 }
 
 @media screen and (max-width: 860px){
