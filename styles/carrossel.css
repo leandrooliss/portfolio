@@ -7,6 +7,7 @@
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     cursor: pointer;
+    touch-action: pan-y;
 }
 
 .carrossel__imagem{
@@ -48,7 +49,7 @@
     display: flex;
     gap: 5px;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .carrossel__indicador{
@@ -72,15 +73,24 @@
     right: 0px;
     background-color: rgba(0,0,0,0.8);
     z-index: 2;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility 0s linear .3s;
 }
 
 .lightbox__img{
     width: 70vw;
+}
+
+.lightbox-ativo{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .3s ease, visibility 0s;
 }
 
 .sem-scroll {
@@ -99,5 +109,24 @@
 
     .carrossel #botao-direito{
         transform: translate(15px, calc(-50% - 12px));
+    }
+
+    .lightbox{
+        gap: 15px;
+    }
+
+    .lightbox .carrossel__botao{
+        width: 40px;
+        height: 40px;
+    }
+
+    .lightbox .carrossel__botao img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carrossel .carrossel__botao{
+        display: none;
     }
 }

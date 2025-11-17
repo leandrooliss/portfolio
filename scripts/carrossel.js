@@ -1,3 +1,4 @@
+const faixaCarrossel = document.querySelector('.carrossel__faixa');
 const imagensDoCarrossel = document.querySelectorAll('.carrossel__imagem');
 const botoesEsquerdo = document.querySelectorAll('.botao__esquerdo');
 const botoesDireito = document.querySelectorAll('.botao__direito');
@@ -22,12 +23,6 @@ imagensDoCarrossel.forEach((_, i) => {
     });
 
     indicadores.appendChild(indicador);
-
-    const faixaCarrossel = document.querySelector('.carrossel__faixa');
-    faixaCarrossel.addEventListener('click', function(){
-        lightbox.style.display = 'flex';
-        document.body.classList.add('sem-scroll');
-    });
 })
 
 const botoesIndicadores = indicadores.querySelectorAll('.carrossel__indicador');
@@ -59,8 +54,35 @@ botoesDireito.forEach(botao => {
     });
 });
 
+faixaCarrossel.addEventListener('click', function(){
+    lightbox.classList.add('lightbox-ativo')
+    document.body.classList.add('sem-scroll');
+});
+
+let toqueInicio = 0;
+let toqueFim = 0;
+
+faixaCarrossel.addEventListener('touchstart', function(event){
+    toqueInicio = event.touches[0].clientX;
+
+});
+
+faixaCarrossel.addEventListener('touchend', function(event){
+    toqueFim = event.changedTouches[0].clientX;
+
+    const distanciaToque = toqueFim - toqueInicio;
+
+    if(distanciaToque < -50){
+        indice = (indice + 1) % imagensDoCarrossel.length;
+        mudarImagem();
+    } else if(distanciaToque > 50){
+        indice = (indice - 1 + imagensDoCarrossel.length) % imagensDoCarrossel.length;
+        mudarImagem();
+    }
+});
+
 lightbox.addEventListener('click', function(){
-    lightbox.style.display = 'none';
+    lightbox.classList.remove('lightbox-ativo');
     document.body.classList.remove('sem-scroll');
 });
 
