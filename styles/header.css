@@ -67,7 +67,12 @@
         transform: scaleY(1);
         opacity: 1;
     }
-
+    
+    .cabecalho__menu a{
+        background-color: transparent;
+        padding: 0px;
+    }
+    
     .menu__link{
         align-self: flex-end;
         color: var(--branco);
