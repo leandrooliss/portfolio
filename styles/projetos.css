@@ -48,11 +48,21 @@
     width: 100%;
     height: auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: block;
+    transition: scale .15s ease;
+}
+
+.projeto__preview:hover{
+    scale: 1.05;
 }
 
 .projetos__projeto div{
     display: flex;
     flex-direction: column;
+}
+
+.projetos__projeto h3:hover{
+    text-decoration: underline;
 }
 
 .projeto__descricao{
